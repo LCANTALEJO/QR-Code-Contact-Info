@@ -31,7 +31,7 @@ st.markdown("")  # (blank line for safety)
 st.markdown(
     """
     <h2 style='text-align: center; margin-bottom: 0;'>Lyle Cantalejo</h2>
-    <h4 style='text-align: center; color: gray; margin-top: 0;'>Technical Service Manager</h4>
+    <h2 style='text-align: center; color: gray; margin-top: 0;'>Technical Service Manager</h4>
     """,
     unsafe_allow_html=True
 )
