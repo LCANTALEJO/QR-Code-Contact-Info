@@ -49,7 +49,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("---")
+#st.markdown("---")
 
 # --- EMAILS ---
 st.subheader("📧 Emails")
@@ -63,7 +63,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("---")
+#st.markdown("---")
 
 # --- PHONE NUMBERS ---
 st.subheader("📞 Phone Numbers")
@@ -77,7 +77,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("---")
+#st.markdown("---")
 
 # --- EMERGENCY CONTACT ---
 st.subheader("🚨 Emergency Contact")
