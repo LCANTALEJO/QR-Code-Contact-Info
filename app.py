@@ -52,7 +52,7 @@ st.markdown(
 #st.markdown("---")
 
 # --- EMAILS ---
-st.subheader("📧 Emails")
+#st.subheader("📧 Emails")
 st.markdown(
     """
     <div style='text-align: left; font-size:20px;'>
@@ -66,7 +66,7 @@ st.markdown(
 #st.markdown("---")
 
 # --- PHONE NUMBERS ---
-st.subheader("📞 Phone Numbers")
+#st.subheader("📞 Phone Numbers")
 st.markdown(
     """
     <div style='text-align: left; font-size:20px;'>
@@ -80,7 +80,7 @@ st.markdown(
 #st.markdown("---")
 
 # --- EMERGENCY CONTACT ---
-st.subheader("🚨 Emergency Contact")
+#st.subheader("🚨 Emergency Contact")
 st.markdown(
     """
     <div style='text-align: left; font-size:20px;'>
