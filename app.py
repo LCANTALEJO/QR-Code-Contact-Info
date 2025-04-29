@@ -122,5 +122,5 @@ st.download_button(
 )
 
 # --- FOOTER ---
-st.caption("Made with ❤️ by Lyle Cantalejo • Powered by Streamlit")
+#st.caption("Made with ❤️ by Lyle Cantalejo • Powered by Streamlit")
 
