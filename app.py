@@ -55,7 +55,7 @@ st.markdown("---")
 st.subheader("📧 Emails")
 st.markdown(
     """
-    <div style='text-align: center; font-size:18px;'>
+    <div style='text-align: left; font-size:20px;'>
     📧 <a href="mailto:Lyle.Cantalejo@wevochemical.com">Lyle.Cantalejo@wevochemical.com</a><br>
     📧 <a href="mailto:Lyle.Cantalejo@gmail.com">Lyle.Cantalejo@gmail.com</a>
     </div>
