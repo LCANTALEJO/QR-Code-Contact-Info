@@ -36,7 +36,7 @@ st.markdown(
 # st.markdown("---")
 
 # --- COMPANY INFORMATION ---
-st.subheader("📍 Company")
+#st.subheader("📍 Company")
 st.markdown(
     """
     <div style='text-align: left; font-size:20px;'>
