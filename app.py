@@ -2,10 +2,10 @@ import streamlit as st
 import base64
 from io import BytesIO
 
-# Set page config
+# --- PAGE SETTINGS ---
 st.set_page_config(page_title="Lyle Cantalejo Contact", page_icon="📇", layout="centered")
 
-# --- Load and Encode the Local Image
+# --- LOAD and ENCODE LOCAL PHOTO ---
 def get_base64_image(img_path):
     with open(img_path, "rb") as img_file:
         img_bytes = img_file.read()
@@ -14,20 +14,17 @@ def get_base64_image(img_path):
 
 img_base64 = get_base64_image("Lyle Photo.jpg")
 
-# --- Display Centered Image
+# --- DISPLAY CENTERED PROFILE PHOTO ---
 st.markdown(
     f"""
     <div style='text-align: center;'>
-        <img src='data:image/jpeg;base64,{img_base64}' width='220' style='border-radius: 15px;'>
+        <img src='data:image/jpeg;base64,{img_base64}' width='220' style='border-radius: 20px;'>
     </div>
     """,
     unsafe_allow_html=True
 )
 
-# --- Now NORMAL Streamlit Components start properly
-st.markdown("")  # (blank line for safety)
-
-# Display Name and Title
+# --- NAME and TITLE ---
 st.markdown(
     """
     <h2 style='text-align: center; margin-bottom: 0;'>Lyle Cantalejo</h2>
@@ -38,49 +35,67 @@ st.markdown(
 
 st.markdown("---")
 
-# Company Information
+# --- COMPANY INFORMATION ---
 st.subheader("📍 Company")
-st.write("""
-**WEVO Chemical (Asia-Pacific) Pte. Ltd.**  
-German Centre, Office #04-13/14  
-25 International Business Park  
-Singapore, 609916
-""")
+st.markdown(
+    """
+    <div style='text-align: center; font-size:20px;'>
+    <strong>WEVO Chemical (Asia-Pacific) Pte. Ltd.</strong><br>
+    <span style='font-size:16px;'>German Centre, Office #04-13/14<br>
+    25 International Business Park<br>
+    Singapore, 609916</span>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown("---")
 
-# Emails
+# --- EMAILS ---
 st.subheader("📧 Emails")
 st.markdown(
     """
-    [📨 Lyle.Cantalejo@wevochemical.com](mailto:Lyle.Cantalejo@wevochemical.com)  
-    [📨 Lyle.Cantalejo@gmail.com](mailto:Lyle.Cantalejo@gmail.com)
-    """, unsafe_allow_html=True)
+    <div style='text-align: center; font-size:18px;'>
+    📧 <a href="mailto:Lyle.Cantalejo@wevochemical.com">Lyle.Cantalejo@wevochemical.com</a><br>
+    📧 <a href="mailto:Lyle.Cantalejo@gmail.com">Lyle.Cantalejo@gmail.com</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown("---")
 
-# Phone Numbers
+# --- PHONE NUMBERS ---
 st.subheader("📞 Phone Numbers")
 st.markdown(
     """
-    [📱 +65 6990 9594 (Singapore)](tel:+6569909594)  
-    [📱 +63 945 170 2105 (Philippines)](tel:+639451702105)
-    """, unsafe_allow_html=True)
+    <div style='text-align: center; font-size:18px;'>
+    📱 <a href="tel:+6569909594">+65 6990 9594 (Singapore)</a><br>
+    📱 <a href="tel:+639451702105">+63 945 170 2105 (Philippines)</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown("---")
 
-# Emergency Contact
+# --- EMERGENCY CONTACT ---
 st.subheader("🚨 Emergency Contact")
-st.write("""
-**Geejay T. Cantalejo**  
-📱 +63 906 236 9758  
-Lot 8, Block 23, Phase 4A, San Antonio Heights  
-Santo Tomas, Batangas 4234
-""")
+st.markdown(
+    """
+    <div style='text-align: center; font-size:18px;'>
+    <strong>Geejay T. Cantalejo</strong><br>
+    📱 <a href="tel:+639062369758">+63 906 236 9758</a><br>
+    Lot 8, Block 23, Phase 4A, San Antonio Heights<br>
+    Santo Tomas, Batangas 4234
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown("---")
 
-# Create vCard for download
+# --- CREATE VCARD FILE ---
 vcard = f"""
 BEGIN:VCARD
 VERSION:3.0
@@ -98,7 +113,7 @@ END:VCARD
 
 vcard_bytes = BytesIO(vcard.encode())
 
-# Download Button
+# --- DOWNLOAD BUTTON FOR VCARD ---
 st.download_button(
     label="📇 Download Contact Card (vCard)",
     data=vcard_bytes,
@@ -106,4 +121,6 @@ st.download_button(
     mime="text/vcard"
 )
 
+# --- FOOTER ---
 st.caption("Made with ❤️ by Lyle Cantalejo • Powered by Streamlit")
+
