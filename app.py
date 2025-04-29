@@ -69,9 +69,9 @@ st.markdown("---")
 st.subheader("📞 Phone Numbers")
 st.markdown(
     """
-    <div style='text-align: center; font-size:18px;'>
-    📱 <a href="tel:+6569909594">+65 6990 9594 (Singapore)</a><br>
-    📱 <a href="tel:+639451702105">+63 945 170 2105 (Philippines)</a>
+    <div style='text-align: left; font-size:20px;'>
+     <a href="tel:+6569909594">+65 6990 9594 (Singapore)</a><br>
+     <a href="tel:+639451702105">+63 945 170 2105 (Philippines)</a>
     </div>
     """,
     unsafe_allow_html=True
@@ -83,9 +83,9 @@ st.markdown("---")
 st.subheader("🚨 Emergency Contact")
 st.markdown(
     """
-    <div style='text-align: center; font-size:18px;'>
+    <div style='text-align: left; font-size:18px;'>
     <strong>Geejay T. Cantalejo</strong><br>
-    📱 <a href="tel:+639062369758">+63 906 236 9758</a><br>
+     <a href="tel:+639062369758">+63 906 236 9758</a><br>
     Lot 8, Block 23, Phase 4A, San Antonio Heights<br>
     Santo Tomas, Batangas 4234
     </div>
