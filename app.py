@@ -39,7 +39,7 @@ st.markdown("---")
 st.subheader("📍 Company")
 st.markdown(
     """
-    <div style='text-align: center; font-size:20px;'>
+    <div style='text-align: left; font-size:20px;'>
     <strong>WEVO Chemical (Asia-Pacific) Pte. Ltd.</strong><br>
     <span style='font-size:16px;'>German Centre, Office #04-13/14<br>
     25 International Business Park<br>
