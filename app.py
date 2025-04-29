@@ -41,7 +41,7 @@ st.markdown(
     """
     <div style='text-align: left; font-size:20px;'>
     <strong>WEVO Chemical (Asia-Pacific) Pte. Ltd.</strong><br>
-    <span style='font-size:16px;'>German Centre, Office #04-13/14<br>
+    <span style='font-size:20px;'>German Centre, Office #04-13/14<br>
     25 International Business Park<br>
     Singapore, 609916</span>
     </div>
