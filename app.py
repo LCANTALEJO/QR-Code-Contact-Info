@@ -33,7 +33,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("---")
+# st.markdown("---")
 
 # --- COMPANY INFORMATION ---
 st.subheader("📍 Company")
