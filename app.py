@@ -80,7 +80,7 @@ st.markdown(
 #st.markdown("---")
 
 # --- EMERGENCY CONTACT ---
-#st.subheader("🚨 Emergency Contact")
+st.subheader("Emergency Contact")
 st.markdown(
     """
     <div style='text-align: left; font-size:20px;'>
