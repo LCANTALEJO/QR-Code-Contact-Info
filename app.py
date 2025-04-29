@@ -18,7 +18,7 @@ img_base64 = get_base64_image("Lyle Photo.jpg")
 st.markdown(
     f"""
     <div style='text-align: center;'>
-        <img src='data:image/jpeg;base64,{img_base64}' width='220' style='border-radius: 20px;'>
+        <img src='data:image/jpeg;base64,{img_base64}' width='250' style='border-radius: 20px;'>
     </div>
     """,
     unsafe_allow_html=True
